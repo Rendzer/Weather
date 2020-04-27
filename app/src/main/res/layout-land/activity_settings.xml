@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:weightSum="4"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Słońce / Księżyc"
+                    android:layout_weight="1"
+                    android:textSize="32dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical|center_horizontal"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:weightSum="10"
+                    android:gravity="center_vertical|center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Odświerzanie informacji (min):"
+                        android:gravity="left|center_vertical"
+                        android:layout_weight="3"
+                        android:textSize="16dp"
+                        android:layout_gravity="left" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="15"
+                        android:id="@+id/textRefresh"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_weight="7"
+                        android:textSize="16dp"
+                        android:editable="true"
+                        android:numeric="integer|decimal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:weightSum="10"
+                    android:gravity="center_vertical|center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Długosć Geograficzna:"
+                        android:gravity="left|center_vertical"
+                        android:layout_weight="3"
+                        android:textSize="16dp"
+                        android:layout_gravity="left" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="0"
+                        android:id="@+id/textLongitude"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_weight="7"
+                        android:textSize="16dp"
+                        android:editable="true"
+                        android:numeric="decimal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:weightSum="10"
+                    android:gravity="left">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Szerokość Geograficzna:"
+                        android:gravity="left|center_vertical"
+                        android:layout_weight="3"
+                        android:textSize="16dp"
+                        android:layout_gravity="left" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="0"
+                        android:id="@+id/textLatitude"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_weight="7"
+                        android:textSize="16dp"
+                        android:editable="true"
+                        android:numeric="decimal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Zapisz"
+                android:id="@+id/save"
+                android:layout_weight="1"
+                android:onClick="saveSettings"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">AstroWeather</string>
+
+    <string name="action_app">AstroWeather</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">Refresh</string>
+
+    <string name="longitude_value_name">longitude</string>
+    <string name="latitude_value_name">latitude</string>
+    <string name="refreshTime_value_name">refreshTime</string>
+    <string name="country_value_name">country</string>
+    <string name="city_value_name">city</string>
+    <string name="system_value_name">system</string>
+
+    <string name="outdated_weather_data_info">Informacje o pogodzie mogą być nieaktualne!</string>
+    <string name="no_weather_data_info">Nie można pobrać informacji o pogodzie!</string>
+    <string name="toast_update_weather_data">Zaktualizowano dane.</string>
+
+    <string name="weather_file_name">weather.dat</string>
+    <string name="localization_file_name">localizations.dat</string>
+
+    <string-array name="system">
+        <item>Metryczny</item>
+        <item>Imperialny</item>
+    </string-array>
+
+
+
+
+</resources>
